@@ -22,7 +22,7 @@
         android:text="NB"
         android:id="@+id/button2"
         android:layout_centerHorizontal="true"
-        android:onClick="nb"/>
+        android:onClick="agencies"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,12 +36,22 @@
         android:layout_toRightOf="@+id/button"
         android:layout_toEndOf="@+id/button" />
 
-    <!--Spinner
+    <Spinner
         android:id="@+id/spinner1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:drawable/btn_dropdown"
         android:spinnerMode="dropdown"
-        android:layout_below="@+id/textView2"/-->
+        android:visibility="invisible"
+        android:layout_below="@+id/textView2"/>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:visibility="invisible"
+        android:layout_below="@+id/spinner1"/>
 
 </RelativeLayout>
